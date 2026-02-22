@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة تجربة النظام</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="global-config.js"></script>
+</head>
+<body>
+
+    <main class="main-container">
+        <div class="elegant-card">
+            <div class="card-header">📝 تجربة إدخال بيانات | Test Entry</div>
+            <div class="taxi-form">
+                <div class="input-grid">
+                    <div class="form-group">
+                        <label>اسم التجربة | Test Name</label>
+                        <input type="text" placeholder="أدخل أي شيء هنا...">
+                    </div>
+                    <div class="form-group">
+                        <label>الحالة | Status</label>
+                        <select>
+                            <option>يعمل بنجاح ✅</option>
+                            <option>تحت التجربة ⚠️</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button class="btn-main">زر رئيسي</button>
+                    <button class="btn-sub">زر فرعي</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="elegant-card">
+            <div class="card-header">📊 تجربة عرض الجدول | Table View</div>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>البند | Item</th>
+                            <th>النتيجة | Result</th>
+                            <th>النبض | Pulse</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>التنسيق Responsive</td>
+                            <td>ممتاز ✅</td>
+                            <td><span class="badge bg-active">نشط</span></td>
+                        </tr>
+                        <tr>
+                            <td>الهيدر والمنيو</td>
+                            <td>يعمل تلقائياً ⚙️</td>
+                            <td><span class="badge bg-active">نشط</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // تشغيل المحرك المركزي فور تحميل الصفحة
+        window.onload = () => {
+            // نمرر عنوان الصفحة ليظهر في الهيدر الأسود
+            bootSystem("صفحة الاختبار التجريبية");
+        };
+    </script>
+</body>
+</html>
